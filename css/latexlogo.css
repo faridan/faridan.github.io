@@ -1,48 +1,20 @@
-﻿/*===============================================
-latexlogo.css
-
-LaTeX and TeX logos
-Based on Edward O'Connors blog
-http://edward.oconnor.cx/2007/08/tex-poshlet
-
-Adrian P Robson
-30 May 2012
-
-=================================================*/
-
-/* TeX logo
-   To use ...
-   <span class="tex">T<sub>e</sub>X</span>   */
-.tex {
-   text-transform: uppercase;
-   font-size: 1em;
-}
-.tex sub {
-   text-transform: uppercase;
-   vertical-align: -0.5ex;
-   margin-left: -0.1667em;
-   margin-right: -0.125em;
-   font-size: 1em;
+.tex sub, .latex sub, .latex sup {
+text-transform: uppercase;
 }
 
-/* LaTeX logo
-   To use ...
-   <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>  */
-.latex {
-   text-transform: uppercase;
-   font-size: 1em;
+.tex sub, .latex sub {
+vertical-align: -0.5ex;
+margin-left: -0.1667em;
+margin-right: -0.125em;
 }
-.latex sub {
-   text-transform: uppercase;
-   vertical-align: -0.5ex;
-   margin-left: -0.1667em;
-   margin-right: -0.125em;
-   font-size: 1em;
+
+.tex, .latex, .tex sub, .latex sub {
+font-size: 1em;
 }
+
 .latex sup {
-   text-transform: uppercase;
-   font-size: 0.85em;
-   vertical-align: 0.15em;
-   margin-left: -0.36em;
-   margin-right: -0.15em;
+font-size: 0.85em;
+vertical-align: 0.15em;
+margin-left: -0.36em;
+margin-right: -0.15em;
 }
