@@ -89,10 +89,10 @@
 						<div id="lastmodified"></div>
 						<script>
 							var date = new Date(document.lastModified);
-// 							var noTime = new Date(date.getDate(), date.getMonth(), date.getFullYear());
-							document.getElementById("lastmodified").innerHTML = "Last modified: " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
+							var month = date.toLocaleString('default', { month: 'short' });
+							document.getElementById("lastmodified").innerHTML = "Last modified: " + date.getDate() + " " + console.log(month) + " " + date.getFullYear();
 						</script>
-<!-- 						&copy; 2022 All rights reserved. -->
+						
 						&copy; <script>document.write(new Date().getFullYear())</script> Soroush Faridan
 					</div>
 					<!-- / Copyrights -->
