@@ -90,7 +90,8 @@
 					<div id="lastmodified" class="copyrights"></div>
 					<script>
 						var date = new Date(document.lastModified);
-						document.getElementById("lastmodified").innerHTML = "Last modified: " + date;
+						var noTime = new Date(date.getDate(), date.getMonth(), date.getFullYear());
+						document.getElementById("lastmodified").innerHTML = "Last modified: " + noTime;
 					</script>
 					<!-- / Copyrights -->
 				</div>
