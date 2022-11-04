@@ -89,10 +89,9 @@
 						<div id="lastmodified"></div>
 						<script>
 							var date = new Date(document.lastModified);
-							var month = date.toLocaleString('default', { month: 'short' });
-							document.getElementById("lastmodified").innerHTML = "Last modified: " + date.getDate() + " " + month + " " + date.getFullYear();
+							var shortmonth = date.toLocaleString('default', { month: 'short' });
+							document.getElementById("lastmodified").innerHTML = "Last modified: " + date.getDate() + " " + shortmonth + " " + date.getFullYear();
 						</script>
-						
 						&copy; <script>document.write(new Date().getFullYear())</script> Soroush Faridan
 					</div>
 					<!-- / Copyrights -->
