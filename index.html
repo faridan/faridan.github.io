@@ -85,13 +85,14 @@
 					</div>
 					<!-- / Social Links -->
 					<!-- Copyrights -->
-					<div class="copyrights">© 2022 All rights reserved.</div>
-					<p id="lastmodified" class="copyrights"></p>
-					<script>
-						var date = new Date(document.lastModified);
-// 						var noTime = new Date(date.getDate(), date.getMonth(), date.getFullYear());
-						document.getElementById("lastmodified").innerHTML = "Last modified: " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
-					</script>
+					<div class="copyrights">© 2022 All rights reserved.<br>
+						<div id="lastmodified"></div>
+						<script>
+							var date = new Date(document.lastModified);
+// 							var noTime = new Date(date.getDate(), date.getMonth(), date.getFullYear());
+							document.getElementById("lastmodified").innerHTML = "Last modified: " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
+						</script>
+					</div>
 					<!-- / Copyrights -->
 				</div>
 			</header>
